@@ -1,7 +1,8 @@
 /* Estrutura das páginas, hero, carrosséis e detalhes. */
 .inicio {
   position: relative;
-  width: 100%;
+  width: min(1240px, calc(100% - 7vw));
+  margin-inline: auto;
   min-height: 88vh;
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(250px, 0.6fr);
@@ -86,7 +87,8 @@
 
 .pagina-topo {
   position: relative;
-  width: 100%;
+  width: min(1240px, calc(100% - 7vw));
+  margin-inline: auto;
   min-height: 52vh;
   padding-top: 155px;
   padding-bottom: 70px;

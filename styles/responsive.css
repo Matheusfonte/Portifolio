@@ -79,6 +79,7 @@
   .inicio {
     min-height: 82vh;
     padding-top: 95px;
+    width: min(100% - 28px, 1240px);
   }
 
   .inicio h1 {
@@ -92,6 +93,7 @@
   .pagina-topo {
     min-height: 44vh;
     padding-top: 125px;
+    width: min(100% - 28px, 1240px);
   }
 
   .pagina-topo h1 {
