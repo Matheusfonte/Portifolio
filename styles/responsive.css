@@ -6,7 +6,7 @@
 
   .menu {
     position: absolute;
-    top: 68px;
+    top: 82px;
     right: 3.5vw;
     width: 240px;
     padding: 14px;
@@ -52,17 +52,17 @@
   }
 
   .navegacao {
-    min-height: 64px;
+    min-height: 70px;
     gap: 7px;
   }
 
   .logo {
-    font-size: 1.35rem;
+    font-size: 1.55rem;
   }
 
   .busca.aberta {
     position: absolute;
-    top: 64px;
+    top: 70px;
     right: 14px;
     left: 14px;
   }

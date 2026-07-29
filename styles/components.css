@@ -14,7 +14,7 @@
 }
 
 .navegacao {
-  min-height: 72px;
+  min-height: 84px;
   display: flex;
   align-items: center;
   gap: 22px;
@@ -23,7 +23,7 @@
 .logo {
   margin-right: 8px;
   color: var(--accent);
-  font-size: 1.6rem;
+  font-size: 1.85rem;
   font-weight: 950;
   letter-spacing: -0.1em;
   text-transform: uppercase;
@@ -42,7 +42,7 @@
 
 .menu a {
   color: #e5e5e5;
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   font-weight: 500;
   transition: color 300ms ease;
 }
@@ -65,8 +65,8 @@
 .tema-botao,
 .menu-botao,
 .busca-botao {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   display: grid;
   flex: 0 0 auto;
   place-items: center;
@@ -123,8 +123,8 @@
 }
 
 .perfil-mini {
-  width: 34px;
-  height: 34px;
+  width: 39px;
+  height: 39px;
   overflow: hidden;
   flex: 0 0 auto;
   border: 2px solid transparent;
