@@ -1,0 +1,96 @@
+/* Adaptações para tablet e celular. */
+@media (max-width: 850px) {
+  .menu-botao {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 76px;
+    right: 20px;
+    width: 230px;
+    padding: 14px;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    border: 5px solid;
+    border-color: var(--painel-claro) var(--painel-escuro) var(--painel-escuro) var(--painel-claro);
+    background: var(--painel);
+    box-shadow: var(--sombra-pixel);
+  }
+
+  .menu.aberto {
+    display: flex;
+  }
+
+  .inicio,
+  .sobre-grid,
+  .trajetoria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inicio {
+    gap: 35px;
+  }
+
+  .cartao-perfil {
+    width: min(430px, 100%);
+  }
+
+  .tecnologias-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projetos-grid,
+  .blog-grid,
+  .contato-pagina {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  html {
+    font-size: 18px;
+  }
+
+  .container {
+    width: min(100% - 24px, 1120px);
+  }
+
+  .inicio {
+    padding-block: 32px 125px;
+  }
+
+  .inicio-texto,
+  .pagina-topo,
+  .projeto-detalhe {
+    padding: 22px;
+  }
+
+  .inicio h1 {
+    font-size: 2.25rem;
+  }
+
+  .secao {
+    padding-block: 62px 125px;
+  }
+
+  .qualidades,
+  .tecnologias-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .game-hud {
+    right: 10px;
+    bottom: 8px;
+    width: calc(100% - 20px);
+  }
+
+  .hud-coracoes {
+    font-size: 1rem;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+}

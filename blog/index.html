@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Matheus Fonte</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="navegacao container">
+      <a class="logo" href="../index.html">MF<span>.</span></a>
+      <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <div class="menu">
+        <a href="../index.html">Início</a>
+        <a href="../sobre/index.html">Sobre</a>
+        <a href="../projetos/index.html">Projetos</a>
+        <a href="index.html" aria-current="page">Blog</a>
+        <a href="../contato/index.html">Contato</a>
+      </div>
+      <button class="tema-botao" type="button" aria-label="Alternar tema"><span class="tema-icone">☾</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina-topo container">
+      <p class="secao-etiqueta">APRENDIZADO</p>
+      <h1>Blog técnico</h1>
+      <p>Pequenos textos sobre o desenvolvimento dos meus projetos.</p>
+    </section>
+    <section class="secao fundo-alternativo">
+      <div class="container blog-grid">
+        <article class="blog-card">
+          <span>HTML, CSS E JAVASCRIPT</span>
+          <h2>Como organizei meu portfólio em várias páginas</h2>
+          <p>Separei o conteúdo em pastas para deixar a navegação e os arquivos mais organizados.</p>
+        </article>
+        <article class="blog-card">
+          <span>FRONT-END</span>
+          <h2>Criando modo claro e escuro</h2>
+          <p>Usei variáveis CSS e JavaScript para alternar o tema e salvar a preferência no navegador.</p>
+        </article>
+        <article class="blog-card">
+          <span>BACK-END</span>
+          <h2>O que aprendi criando uma API REST</h2>
+          <p>Organização de rotas e operações de cadastro, leitura, atualização e exclusão de dados.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container"><span>© <span id="ano"></span> Matheus Fonte Gonçalves</span><span>Blog</span></div></footer>
+</body>
+</html>

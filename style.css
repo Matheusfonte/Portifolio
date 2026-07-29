@@ -1,0 +1,5 @@
+/* Arquivo principal: reúne os módulos visuais do portfólio. */
+@import url("styles/base.css");
+@import url("styles/components.css");
+@import url("styles/pages.css");
+@import url("styles/responsive.css");

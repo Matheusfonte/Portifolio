@@ -1,0 +1,121 @@
+/* Base, variáveis de tema e textura geral. */
+:root {
+  --ceu: #a9d8e8;
+  --ceu-claro: #dff4f5;
+  --grama: #5d9e3b;
+  --grama-clara: #7fbd48;
+  --terra: #79512f;
+  --terra-escura: #4c331f;
+  --pedra: #77796f;
+  --pedra-clara: #aaa99d;
+  --madeira: #8a5b32;
+  --areia: #e3d3a5;
+  --painel: #c9c6b7;
+  --painel-claro: #e7e3d1;
+  --painel-escuro: #56584f;
+  --texto: #24271f;
+  --texto-suave: #515548;
+  --borda: #282b25;
+  --primaria: #3f7f2e;
+  --sombra-pixel: 4px 4px 0 #252820;
+  --fonte-pixel: "Lucida Console", "Courier New", monospace;
+}
+
+body.dark {
+  --ceu: #182238;
+  --ceu-claro: #24304a;
+  --grama: #355e2c;
+  --grama-clara: #4e7b37;
+  --terra: #503822;
+  --terra-escura: #2f241a;
+  --pedra: #4b4e49;
+  --pedra-clara: #71746c;
+  --painel: #474943;
+  --painel-claro: #62655c;
+  --painel-escuro: #22251f;
+  --texto: #f4efd8;
+  --texto-suave: #d2ceb9;
+  --borda: #11140f;
+  --primaria: #73b94c;
+  --sombra-pixel: 4px 4px 0 #0b0d0a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--texto);
+  font-family: var(--fonte-pixel);
+  line-height: 1.6;
+  image-rendering: pixelated;
+  background-color: var(--ceu);
+  background-image:
+    linear-gradient(90deg, transparent 75%, rgba(255, 255, 255, 0.14) 75%),
+    linear-gradient(rgba(255, 255, 255, 0.1) 50%, transparent 50%),
+    linear-gradient(var(--ceu-claro), var(--ceu));
+  background-size: 64px 64px, 96px 48px, 100% 100%;
+  transition: color 0.25s, background-color 0.25s;
+}
+
+body::before {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: -1;
+  height: 30vh;
+  content: "";
+  background-color: var(--terra);
+  background-image:
+    linear-gradient(90deg, rgba(47, 32, 19, 0.2) 2px, transparent 2px),
+    linear-gradient(rgba(255, 255, 255, 0.08) 2px, transparent 2px);
+  background-size: 32px 32px;
+  border-top: 18px solid var(--grama);
+  box-shadow: inset 0 7px 0 var(--grama-clara);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+::selection {
+  color: #fff;
+  background: var(--primaria);
+}
+
+:focus-visible {
+  outline: 4px solid #f6d84a;
+  outline-offset: 4px;
+}
+
+/* Barra de rolagem em estilo pixel. */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--terra-escura);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid var(--terra-escura);
+  background: var(--grama);
+}

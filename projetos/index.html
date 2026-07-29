@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos | Matheus Fonte</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="navegacao container">
+      <a class="logo" href="../index.html">MF<span>.</span></a>
+      <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <div class="menu">
+        <a href="../index.html">Início</a>
+        <a href="../sobre/index.html">Sobre</a>
+        <a href="index.html" aria-current="page">Projetos</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../contato/index.html">Contato</a>
+      </div>
+      <button class="tema-botao" type="button" aria-label="Alternar tema"><span class="tema-icone">☾</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina-topo container">
+      <p class="secao-etiqueta">MEUS TRABALHOS</p>
+      <h1>Projetos</h1>
+      <p>Cada projeto possui sua própria página com descrição e tecnologias utilizadas.</p>
+    </section>
+
+    <section class="secao fundo-alternativo">
+      <div class="container projetos-grid">
+        <article class="projeto-card">
+          <div class="projeto-imagem financeiro"><span>R$</span></div>
+          <div class="projeto-conteudo">
+            <small>FULL STACK</small>
+            <h2>Sistema de Despesas Pessoais</h2>
+            <p>Sistema para cadastrar usuários, categorias e despesas.</p>
+            <div class="tags"><span>React</span><span>Node.js</span><span>MySQL</span></div>
+            <a href="despesas/index.html">Abrir projeto →</a>
+          </div>
+        </article>
+        <article class="projeto-card">
+          <div class="projeto-imagem api"><span>{ }</span></div>
+          <div class="projeto-conteudo">
+            <small>BACK-END</small>
+            <h2>API REST de Gerenciamento</h2>
+            <p>API com rotas de cadastro, consulta, edição e exclusão.</p>
+            <div class="tags"><span>Node.js</span><span>Express</span><span>Postman</span></div>
+            <a href="api-rest/index.html">Abrir projeto →</a>
+          </div>
+        </article>
+        <article class="projeto-card">
+          <div class="projeto-imagem portfolio"><span>&lt;/&gt;</span></div>
+          <div class="projeto-conteudo">
+            <small>FRONT-END</small>
+            <h2>Portfólio Pessoal</h2>
+            <p>Site responsivo para apresentar minha trajetória profissional.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="portfolio/index.html">Abrir projeto →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container"><span>© <span id="ano"></span> Matheus Fonte Gonçalves</span><span>Projetos</span></div></footer>
+</body>
+</html>
