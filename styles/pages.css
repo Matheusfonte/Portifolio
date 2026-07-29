@@ -1,4 +1,4 @@
-/* Estrutura das páginas e conteúdos específicos. */
+/* Versão final: estrutura das páginas e conteúdos específicos. */
 .inicio {
   min-height: calc(100vh - 76px);
   display: grid;

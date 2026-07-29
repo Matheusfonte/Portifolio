@@ -1,3 +1,4 @@
+// Versão final do portfólio.
 const corpo = document.body;
 const botaoTema = document.querySelector(".tema-botao");
 const iconeTema = document.querySelector(".tema-icone");

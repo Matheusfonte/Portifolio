@@ -1,5 +1,7 @@
 # Portfólio — Matheus Fonte Gonçalves
 
+> Versão final do projeto.
+
 Portfólio pessoal desenvolvido para apresentar minha trajetória, conhecimentos técnicos e projetos.
 
 O site possui uma interface em **pixel art inspirada em jogos de blocos**, com páginas separadas, modo claro e escuro, efeitos sonoros sintetizados e layout responsivo.
