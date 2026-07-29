@@ -58,7 +58,9 @@ portifolio/
 │   │   └── index.html
 │   ├── api-rest/
 │   │   └── index.html
-│   └── portfolio/
+│   ├── portfolio/
+│   │   └── index.html
+│   └── pet-shop/
 │       └── index.html
 ├── blog/
 │   └── index.html

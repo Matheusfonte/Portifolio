@@ -247,6 +247,13 @@
   background: radial-gradient(circle at 70% 30%, #d0525a, transparent 30%), linear-gradient(135deg, #5f151d, #21070b);
 }
 
+.petshop {
+  background:
+    radial-gradient(circle at 72% 28%, rgba(255, 190, 92, 0.88), transparent 28%),
+    radial-gradient(circle at 25% 75%, rgba(229, 9, 20, 0.45), transparent 32%),
+    linear-gradient(135deg, #6a351d, #24110c);
+}
+
 .projeto-conteudo {
   padding: 22px;
 }
