@@ -4,7 +4,7 @@
 
 Portfólio pessoal desenvolvido para apresentar minha trajetória, conhecimentos técnicos e projetos.
 
-O site possui uma interface em **pixel art inspirada em jogos de blocos**, com páginas separadas, modo claro e escuro, efeitos sonoros sintetizados e layout responsivo.
+O site possui uma interface de **plataforma de streaming**, com visual cinematográfico, páginas separadas, modo claro e escuro, efeitos sonoros sintetizados e layout responsivo.
 
 ## Funcionalidades
 
@@ -17,8 +17,12 @@ O site possui uma interface em **pixel art inspirada em jogos de blocos**, com p
 - Currículo disponível para download;
 - Modo claro e escuro com preferência salva no navegador;
 - Menu responsivo para computadores e celulares;
-- Interface em pixel art com painéis de inventário;
-- HUD decorativo com corações e barra de experiência;
+- Hero banner com apresentação profissional;
+- Carrosséis horizontais para projetos, tecnologias e artigos;
+- Pesquisa de conteúdo;
+- Perfil integrado à navegação;
+- Modal reutilizável com informações dos cards;
+- Skeleton de carregamento e animações de entrada;
 - Sons de clique gerados pelo JavaScript, sem arquivos de áudio externos;
 - Navegação acessível por mouse, toque e teclado.
 

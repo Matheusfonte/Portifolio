@@ -1,93 +1,131 @@
-/* Versão final: adaptações para tablet e celular. */
-@media (max-width: 850px) {
+/* Responsividade da experiência de streaming. */
+@media (max-width: 980px) {
   .menu-botao {
-    display: block;
+    display: grid;
   }
 
   .menu {
     position: absolute;
-    top: 76px;
-    right: 20px;
-    width: 230px;
+    top: 68px;
+    right: 3.5vw;
+    width: 240px;
     padding: 14px;
     display: none;
     flex-direction: column;
-    gap: 8px;
-    border: 5px solid;
-    border-color: var(--painel-claro) var(--painel-escuro) var(--painel-escuro) var(--painel-claro);
-    background: var(--painel);
-    box-shadow: var(--sombra-pixel);
+    align-items: stretch;
+    gap: 5px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(20, 20, 20, 0.98);
+    box-shadow: var(--shadow);
   }
 
   .menu.aberto {
     display: flex;
   }
 
-  .inicio,
+  .menu a {
+    padding: 10px;
+  }
+
+  .inicio {
+    grid-template-columns: 1fr;
+  }
+
+  .cartao-perfil {
+    display: none;
+  }
+
   .sobre-grid,
   .trajetoria-grid {
     grid-template-columns: 1fr;
   }
-
-  .inicio {
-    gap: 35px;
-  }
-
-  .cartao-perfil {
-    width: min(430px, 100%);
-  }
-
-  .tecnologias-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .projetos-grid,
-  .blog-grid,
-  .contato-pagina {
-    grid-template-columns: 1fr;
-  }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 680px) {
   html {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .container {
-    width: min(100% - 24px, 1120px);
+    width: min(100% - 28px, 1240px);
+  }
+
+  .navegacao {
+    min-height: 64px;
+    gap: 7px;
+  }
+
+  .logo {
+    font-size: 1.35rem;
+  }
+
+  .busca.aberta {
+    position: absolute;
+    top: 64px;
+    right: 14px;
+    left: 14px;
+  }
+
+  .busca.aberta .busca-campo {
+    width: 100%;
+  }
+
+  .perfil-mini {
+    width: 31px;
+    height: 31px;
   }
 
   .inicio {
-    padding-block: 32px 125px;
+    min-height: 82vh;
+    padding-top: 95px;
   }
 
-  .inicio-texto,
-  .pagina-topo,
+  .inicio h1 {
+    font-size: 3rem;
+  }
+
+  .inicio-texto > p:last-of-type {
+    font-size: 0.9rem;
+  }
+
+  .pagina-topo {
+    min-height: 44vh;
+    padding-top: 125px;
+  }
+
+  .pagina-topo h1 {
+    font-size: 3.2rem;
+  }
+
+  .qualidades,
+  .contato-pagina {
+    grid-template-columns: 1fr;
+  }
+
+  .projeto-card,
+  .blog-card {
+    min-width: 86vw;
+  }
+
+  .projeto-imagem {
+    height: 190px;
+  }
+
   .projeto-detalhe {
     padding: 22px;
   }
 
-  .inicio h1 {
-    font-size: 2.25rem;
+  .projeto-banner {
+    height: 230px;
   }
 
-  .secao {
-    padding-block: 62px 125px;
+  .modal {
+    padding: 12px;
   }
 
-  .qualidades,
-  .tecnologias-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .game-hud {
-    right: 10px;
-    bottom: 8px;
-    width: calc(100% - 20px);
-  }
-
-  .hud-coracoes {
-    font-size: 1rem;
+  .modal-painel {
+    padding: 28px 22px;
   }
 
   footer .container {
